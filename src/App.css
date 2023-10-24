@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.page {
+  display:flex;
+  flex-direction: row;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.sidebar {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  justify-content: space-between;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar.expand{
+  width: 18vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.sidebar.collapse {
+  
 }
 
-.card {
-  padding: 2em;
+.sidebar-header {
+  color: white;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
 }
 
-.read-the-docs {
-  color: #888;
+.sidebar-logo {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+.search-box {
+  padding: 0 15px;
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  border-radius: 6px;
+  background-color: #A4E5D0;
+}
+
+.sidebar-item {
+  color: white;
+  padding: 0 15px;
+  align-items: center;
+  display: flex;
+}
+
+.sidebar-user {
+  background-color: #A4E5D0;
+  color: black;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.content {
+  background-color: #F0FDFA;
+  height: 100vh;
+  width: 82vw;
+}
+
+

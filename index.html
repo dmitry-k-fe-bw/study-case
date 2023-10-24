@@ -1,13 +1,56 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <link rel="stylesheet" href="src/index.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class='page'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
+      <div class='sidebar' id="sidebar">
+        <div class='sidebar-content'>
+          <div class='sidebar-header'>
+            <div class='sidebar-logo'>
+              <i class="fa-regular fa-hospital"></i>
+              <p class="sidebar-text">VET.</p>
+            </div>
+            <i class="sidebar-button fa-solid fa-bars" id="toggle-sidebar"></i>
+          </div>
+          <div class='search-box'>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p class="sidebar-text">search</p>
+          </div>
+          
+          <div class='sidebar-item'>
+          <i class="fa-solid fa-table-cells-large"></i>
+            <p class="sidebar-text">Dashboard</p>
+          </div>
+          <div class='sidebar-item'>
+          <i class="fa-solid fa-paw"></i>
+            <p class="sidebar-text">Pets</p>
+          </div>
+          <div class='sidebar-item'>
+          <i class="fa-regular fa-user"></i>
+            <p class="sidebar-text">Client</p>
+          </div>
+          <div class='sidebar-item'>
+          <i class="fa-solid fa-user-doctor"></i>
+            <p class="sidebar-text">Vets</p>
+          </div>
+          <div class='sidebar-item'>
+          <i class="fa-solid fa-gear"></i>
+            <p class="sidebar-text">Adjust</p>
+          </div>
+        </div>
+        <div class='sidebar-user'>
+          <p class="sidebar-text">Eleanor Pena</p>
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+      </div>
+      
+      <div class='content'>
+        <h2>Dashboard</h2>
+      </div>
+    </div>
+    <script src="src/html-script.js"></script>
   </body>
 </html>
