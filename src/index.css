@@ -15,7 +15,7 @@
     flex-direction: column;
     height:100vh;
     justify-content: space-between;
-    width: 18vw;
+    width: 13%;
     transition: width 1s;
 }
 
@@ -82,6 +82,7 @@
 }
   
 .sidebar-user {
+    margin-block-end: 0;
     background-color: #A4E5D0;
     color: black;
     padding: 0 15px;
@@ -94,4 +95,8 @@
     background-color: #F0FDFA;
     height: 100vh;
     width: 100vw;
+}
+
+.sidebar-content {
+    padding-inline-start: 0;
 }
